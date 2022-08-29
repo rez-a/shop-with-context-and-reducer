@@ -1,0 +1,16 @@
+.btnOutlineDark {
+  background-color: transparent;
+  border: 1px solid #151515;
+  color: #151515;
+  padding: 0.5rem 1rem;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+}
+.btnOutlineDark:hover {
+  border: 1px solid #151515 !important;
+  background-color: #151515;
+  color: #ffffff;
+}

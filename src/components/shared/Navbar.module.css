@@ -1,0 +1,83 @@
+.logo {
+  width: 100px;
+}
+.cartContent {
+  position: relative;
+  cursor: pointer;
+}
+.cartContent .basket {
+  font-size: 20px;
+}
+.cartContent .count {
+  top: 30%;
+  padding: 0.1rem 0.3rem;
+  font-size: 12px;
+}
+.menu {
+  display: flex;
+  align-items: flex-start;
+}
+.btnToggle {
+  display: none;
+}
+.btnToggle button {
+  border: none;
+  background: transparent;
+  font-size: 30px;
+}
+.titleMenu {
+  background-color: #f4f5f7;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: none !important;
+}
+
+@media screen and (max-width: 576px) {
+  .btnToggle {
+    display: block;
+  }
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    background-color: #fff;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transform: translateX(-200px);
+    -webkit-transform: translateX(-200px);
+    -moz-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
+    -o-transform: translateX(-200px);
+  }
+  .titleMenu {
+    display: flex !important;
+  }
+  .show {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+  }
+  .menu .logo,
+  .menu .menuList {
+    padding-left: 1rem;
+  }
+  .menu ul {
+    flex-direction: column !important;
+  }
+  .menu ul li {
+    margin: 1rem 1rem 0 0;
+  }
+  .menu ul li a {
+    margin-left: 0 !important;
+  }
+}

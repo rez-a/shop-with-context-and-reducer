@@ -1,0 +1,42 @@
+.changeGrid button {
+  width: 35px;
+  border: none;
+  background-color: transparent;
+}
+.filterPrice {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  width: 180px;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  background-image: url("../../assets/images/selectIcon.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 6%;
+}
+.filtersItem {
+  padding: 0.5rem;
+}
+.filtersItem:not(.filtersItem:first-child) {
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (max-width: 576px) {
+  .filterSection {
+    flex-direction: column-reverse;
+  }
+  .filtersItem:not(.filtersItem:first-child) {
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  .filtersItem {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem !important;
+  }
+}

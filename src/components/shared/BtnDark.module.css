@@ -1,0 +1,16 @@
+.btnDark {
+  background-color: #151515;
+  border: 1px solid #151515;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  opacity: 0.95;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+}
+.btnDark:hover {
+  border: 1px solid #151515 !important;
+  opacity: 1;
+}
