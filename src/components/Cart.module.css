@@ -1,0 +1,6 @@
+.bgGrey {
+  background-color: #f4f5f7;
+}
+.allProducts div:last-child {
+  border-bottom: none !important;
+}

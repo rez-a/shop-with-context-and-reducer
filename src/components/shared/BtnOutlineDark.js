@@ -3,9 +3,9 @@ import React from 'react';
 //styles
 import styles from './BtnOutlineDark.module.css';
 
-const BtnOutlineDark = ({ width }) => {
+const BtnOutlineDark = ({ width, text }) => {
     return (
-        <button className={`${styles.btnOutlineDark} ${width}`}>Checkout Now</button>
+        <button className={`${styles.btnOutlineDark} ${width}`}>{text}</button>
     );
 };
 

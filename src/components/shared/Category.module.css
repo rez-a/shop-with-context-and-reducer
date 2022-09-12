@@ -1,0 +1,11 @@
+.category {
+  width: fit-content;
+  padding: 0 0.5rem;
+  background-color: #e8fdeb;
+  color: #27b737;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}

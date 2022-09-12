@@ -25,3 +25,10 @@ button:active {
   outline: none !important;
   box-shadow: none !important;
 }
+input:focus,
+input:hover,
+input:active {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}

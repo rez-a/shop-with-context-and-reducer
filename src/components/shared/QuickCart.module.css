@@ -16,7 +16,7 @@
   -ms-transform: translateX(400px);
   -o-transform: translateX(400px);
 }
-.quickCart.show {
+.show {
   transform: translateX(0px);
   -webkit-transform: translateX(0px);
   -moz-transform: translateX(0px);
@@ -30,6 +30,9 @@
 .subTotal {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
+.emptyCart {
+  background-color: #dc415018;
+}
 @media screen and (max-width: 576px) {
   .quickCart {
     width: 350px;
@@ -38,6 +41,13 @@
     -moz-transform: translateX(350px);
     -ms-transform: translateX(350px);
     -o-transform: translateX(350px);
+  }
+  .show {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
   }
 }
 @media screen and (max-width: 375px) {
@@ -48,5 +58,12 @@
     -moz-transform: translateX(300px);
     -ms-transform: translateX(300px);
     -o-transform: translateX(300px);
+  }
+  .show {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
   }
 }

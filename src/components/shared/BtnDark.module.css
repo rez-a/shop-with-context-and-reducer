@@ -10,7 +10,9 @@
   -ms-border-radius: 1px;
   -o-border-radius: 1px;
 }
-.btnDark:hover {
+.btnDark:hover,
+.btnDark:active,
+.btnDark:focus {
   border: 1px solid #151515 !important;
   opacity: 1;
 }

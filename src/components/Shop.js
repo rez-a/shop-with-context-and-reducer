@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ModalElm from './ModalElm';
 
 //components
 import FilterSection from './shared/FilterSection';
-import Header from './shared/Header';
+import Products from './shared/Products';
 
 const Shop = () => {
+    const [grid, setGrid] = useState("col-lg-3 col-md-4 col-sm-6 col-12");
+
     return (
         <>
-            <Header />
-            <main>
-                <FilterSection />
-            </main>
+            <FilterSection setGrid={setGrid} />
+            <Products grid={grid} />
+            <ModalElm />
         </>
     );
 };

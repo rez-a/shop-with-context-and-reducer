@@ -22,8 +22,28 @@
 .filtersItem:not(.filtersItem:first-child) {
   border-left: 1px solid rgba(0, 0, 0, 0.05);
 }
+.filtersItem:first-child {
+  cursor: pointer;
+}
+.filterBox {
+  height: 165px;
+  overflow: visible;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.filterBoxHide {
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
 
 @media screen and (max-width: 576px) {
+  .filterBox {
+    height: 340px;
+  }
   .filterSection {
     flex-direction: column-reverse;
   }
